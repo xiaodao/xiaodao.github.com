@@ -1,5 +1,25 @@
----
-theme :
-  name : twitter
----
-{% include themes/twitter/default.html %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="author" content="{{ site.author.name }}">
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="container">
+    	<header class="header">
+  			<h1>{{ page.title }}</h1>
+		</header>
+      	<div class="content">
+	        {{ content }}
+      	</div>
+      	<footer>
+	        <p>&copy; {{ site.author.name }} 2012 
+	          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+	          </a>
+	        </p>
+	    </footer>
+    </div>
+  </body>
+</html>

@@ -9,9 +9,6 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jacky Li | 小刀的草色天涯
+title : 小刀的草色天涯
 author :
   name : Jacky Li
-  email : veryfaint@gmail.com
-  github : xiaodao
-  weibo : @凉粉小刀

@@ -2,17 +2,6 @@ body{
 	font: 300 15px/1.625 "Hiragino Sans GB W3","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-#container{
-	width: 878px; margin: 35px auto 40px;
-}
-
-#posts{
-	float: left; width: 530px;
-}
-
-#sidebar{
-	float: right; width: 250px;
-}
 
 footer{clear:both}
 
@@ -29,3 +18,49 @@ header a{
 	text-decoration: none;
 	margin: 0;
 }
+
+
+#container{
+	height: auto;
+    margin: 0 auto;
+    padding: 0;
+    width: 955px;
+}
+
+#content{
+    background: url("../images/content-back.gif") repeat-y scroll center top transparent;
+    height: auto;
+    margin: 40px 0 0;
+    overflow: visible;
+    padding: 0;
+    width: 955px;
+}
+
+#posts{
+	float: left; width: 640px;
+}
+
+.post{
+	margin: 0 35px 0 50px;
+}
+
+#sidebar{
+	background: url("../images/logo-back.png") no-repeat scroll center top transparent; float: right; width: 315px;
+}
+
+#sidebar>div{ background: url("../images/sidebar-divider.gif") no-repeat scroll right bottom transparent; height: auto; margin: 0; padding: 15px 30px 30px 20px; width: auto;}
+#sidebar>div .title{ margin: 0 0 10px; line-height: 1.4; color: #453C2F;}
+#sidebar>div a{ margin: 0;}
+#sidebar #logo{height: 88px; margin: 0; padding: 55px 0 0; width: auto;}
+#sidebar #logo h2{margin-left: 21px; font-size: 24px;}
+
+
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}    

@@ -13,6 +13,7 @@ title: 小刀的草色天涯
 </div>
 
 <div id="sidebar">
+	<div id="logo"><span>{{page.title}}</span></div>
 	<div class="aboutme">
 		<div class="title">关于我</div>
 		<div class="description">
@@ -61,5 +62,5 @@ title: 小刀的草色天涯
 	</div>
 	<input class="search" value="搜索">站内搜索</input>
 </div>
-
+http://www.freethemelayouts.com/blog/
 

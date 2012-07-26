@@ -17,15 +17,18 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 
 .clearfix:after { clear: both; content: " "; display: block; height: 0; line-height: 0; visibility: hidden; }  
 
-#posts{ float: left; width: 840px; padding-top: 10px;}
+#posts{ float: left; width: 840px; padding-top: 30px;}
 
 .post{ margin: 0 35px 0 50px; }
 .post .title{font-size: 28px; margin-bottom: 20px; color: #6BBA70;}
 
 #sidebar{ float: right; width: 315px;}
+#sidebar #aboutme {padding: 15px 30px 30px 15px; width: auto;}
 #sidebar #aboutme p{margin:10px 0 0;}
-#sidebar #aboutme .title{ margin-bottom: 20px; font-size: 22px;}
+#sidebar #aboutme .title{ margin-bottom: 20px; font-size: 22px; line-height: 1.4; color: #453C2F; font-weight: bold;}
 #sidebar #aboutme img{margin:10px 0 20px 25px;}
-#sidebar .sidebar-fragment { background: url("../images/sidebar-divider.gif") no-repeat scroll right bottom transparent; height: auto; margin: 0; padding: 15px 30px 30px 15px; width: auto;}
+#sidebar .sidebar-fragment { background: url("../images/sidebar-divider.gif") no-repeat scroll right top transparent; height: auto; margin: 0; padding: 15px 30px 30px 15px; width: auto;}
 #sidebar .sidebar-fragment .title{ margin: 10px 0 10px; line-height: 1.4; color: #453C2F; font-weight: bold;}
 #sidebar .sidebar-fragment a{ margin: 0;}
+
+footer p {color: #777777; font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif; font-size: 1.1em; line-height: 1.5; margin: 20px 0; border-top: 1px solid #D9D9D9; padding-top:30px;}

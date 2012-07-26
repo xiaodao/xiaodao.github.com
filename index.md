@@ -13,7 +13,7 @@ title: 小刀的草色天涯
 </div>
 
 <div id="sidebar">
-	<div class="sidebar-fragment" id="aboutme">
+	<div id="aboutme">
 		<img src="assets/images/avatar.png" alt="" class="circle" weight="200" height="200">
 		<div class="title">小刀的草色天涯</div>
 		<div class="description">

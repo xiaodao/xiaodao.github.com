@@ -46,3 +46,5 @@ footer p {color: #777777; font-family: "Lucida Grande","Lucida Sans Unicode",Ver
 .post .footer .author{opacity: 0.35;}
 .post .footer a{margin: 0; padding: 0; color: rgba(0, 0, 0, 0.95);}
 .post .footer a:hover{font-weight: bold;}
+
+blockquote{border-left: 0.5em solid #9CFBA6; padding-left: 20px;}

@@ -9,11 +9,11 @@ a{ text-decoration: none; border-bottom: 1px dotted #CCCCCC; color: #336699; mar
 header {height: 50px; margin: 30px 0 0 50px;}
 header a{ border: 0 none; display: block; text-decoration: none; margin: 0; }
 
-img.circle{border-radius: 50px 50px 50px 50px;}
+img.circle{border-radius: 100px 100px 100px 100px;}
 
 #container{ height: auto; margin: 0 auto; padding: 0; width: 1155px; }
 
-#content{ height: auto; margin: 100px 0 0; overflow: visible; padding: 0; width: 1155px; }
+#content{ height: auto; margin: 30px 0 0; overflow: visible; padding: 0; width: 1155px; }
 
 .clearfix:after { clear: both; content: " "; display: block; height: 0; line-height: 0; visibility: hidden; }  
 
@@ -25,7 +25,7 @@ img.circle{border-radius: 50px 50px 50px 50px;}
 #sidebar{ float: right; width: 315px;}
 #sidebar #aboutme p{margin:10px 0 0;}
 #sidebar #aboutme .title{ margin-bottom: 20px; font-size: 22px;}
-#sidebar #aboutme img{margin:10px 0 10px 20px;}
-#sidebar .sidebar-fragment { background: url("../images/sidebar-divider.gif") no-repeat scroll right bottom transparent; height: auto; margin: 0; padding: 15px 30px 30px 20px; width: auto;}
+#sidebar #aboutme img{margin:10px 0 20px 25px;}
+#sidebar .sidebar-fragment { background: url("../images/sidebar-divider.gif") no-repeat scroll right bottom transparent; height: auto; margin: 0; padding: 15px 30px 30px 15px; width: auto;}
 #sidebar .sidebar-fragment .title{ margin: 10px 0 10px; line-height: 1.4; color: #453C2F; font-weight: bold;}
 #sidebar .sidebar-fragment a{ margin: 0;}

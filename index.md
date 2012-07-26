@@ -14,6 +14,7 @@ title: 小刀的草色天涯
 
 <div id="sidebar">
 	<div class="sidebar-fragment" id="aboutme">
+		<img src="assets/images/avatar.png" alt="" class="circle" weight="200" height="200">
 		<div class="title">小刀的草色天涯</div>
 		<div class="description">
 			<p>李剑，ThoughtWorks高级咨询师，持续集成专家。曾为国内领先的大型电信公司提供敏捷转型服务及持续集成解决方案。</p>

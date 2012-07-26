@@ -1,4 +1,4 @@
-html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0;padding:0;}table {border-collapse:collapse;border-spacing:0;}fieldset{ border:0;}img,button {background:none;border:0 none;vertical-align:middle;}address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}ol,ul,li {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}q:before,q:after {content:'';}abbr,acronym { border:0;}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,span { margin:0;padding:0;}table {border-collapse:collapse;border-spacing:0;}fieldset{ border:0;}img,button {background:none;border:0 none;vertical-align:middle;}address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}ol,ul,li {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}q:before,q:after {content:'';}abbr,acronym { border:0;}
 
 body{ font: 300 15px/1.625 "Hiragino Sans GB W3","Helvetica Neue",Helvetica,Arial,sans-serif; background: url("../images/background.jpg") repeat scroll 0 0 #EDE5D5;}
 
@@ -34,7 +34,15 @@ footer p {color: #777777; font-family: "Lucida Grande","Lucida Sans Unicode",Ver
 #posts{ float: left; width: 840px; padding-top: 30px;}
 
 .post{ margin: 0 35px 0 50px; font-size: 17px;}
-.post .title{font-size: 28px; margin-bottom: 40px; color: #6BBA70;}
+.post .title{font-size: 28px; margin-bottom: 40px;}
+.post .title a{color: #6BBA70; text-decoration: none; border-bottom: none;}
+
 .post p{line-height: 1.65; margin: 0 0 25px;}
 .post ul{padding: 0 0 20px 30px;}
 .post ul li{padding: 0 0 5px 5px; list-style: disc;}
+
+.post .footer{font-size: 14px; }
+.post .footer .tags{margin: 10px 0 20px; opacity: 0.35;}
+.post .footer .author{opacity: 0.35;}
+.post .footer a{margin: 0; padding: 0; color: rgba(0, 0, 0, 0.95);}
+.post .footer a:hover{font-weight: bold;}

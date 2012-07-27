@@ -42,6 +42,7 @@ footer p {color: #777777; font-family: "Lucida Grande","Lucida Sans Unicode",Ver
 .post ul li{padding: 0 0 5px 5px; list-style: disc;}
 
 .post .footer{font-size: 14px; }
+.post .footer .date{font-weight: 300;}
 .post .footer .tags{margin: 10px 0 20px; opacity: 0.35;}
 .post .footer .author{opacity: 0.35;}
 .post .footer a{margin: 0; padding: 0; color: rgba(0, 0, 0, 0.95);}

@@ -10,11 +10,11 @@ title: 小刀的草色天涯
 			<div class="content">{{ post.content }}</div>
 			<div class="footer"> 
 				<div class="tags">
-				{% for tag in post.tags %}
-					#{{ tag }}
-				{% endfor %}
+					{% for tag in post.tags %}
+						<span class="tag">#{{ tag }}</span>
+					{% endfor %}
 				</div>
-				posted by <span class="author">{{ site.author.name }} in</span>
+				<span class="date">{{ post.date | date_to_string }}</span><span class="author"> posted by {{ site.author.name }} in</span>
 				<span><a href="">{{ post.category }}</a></span>
 			</div>
 		</div>

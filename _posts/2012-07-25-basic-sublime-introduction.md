@@ -6,6 +6,14 @@ category: "朝花夕拾"
 tags: ["sublime", "sublime2"]
 ---
 
+{% highlight ruby %}
+class Test
+	def foo
+  		puts 'foo'
+	end
+end
+{% endhighlight %}
+
 试了一下Sublime，着实超乎想象。决定彻底抛弃TextMate了。
 
 基本的快捷键：

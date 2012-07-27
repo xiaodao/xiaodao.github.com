@@ -11,6 +11,6 @@ markdown: rdiscount
 # so be sure to set them if your theme uses them.
 #
 title: 小刀的草色天涯
-url: xiaodao.github.com
+url: http://xiaodao.github.com
 author :
   name : Jacky Li

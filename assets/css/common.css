@@ -31,8 +31,8 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 #content{ float: left; width: 840px; padding-top: 30px;}
 
 .post{ margin: 0 35px 50px 50px; padding-bottom: 20px; font-size: 17px; border-bottom: 2px solid #E0CBEC; box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075); }
-.post .title{font-size: 28px; margin-bottom: 40px;}
-.post .title a{color: #6BBA70; text-decoration: none; border-bottom: none;}
+.post .title{font-size: 28px; margin-bottom: 40px; color: #6BBA70; }
+.post .title a{color: #6BBA70;  text-decoration: none; border-bottom: none; margin: 0;}
 
 .post p{line-height: 1.65; margin: 0 0 25px;}
 .post ul{padding: 0 0 20px 30px;}

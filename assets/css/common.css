@@ -31,7 +31,8 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 
 #content{ float: left; width: 840px; padding-top: 30px;}
 
-.post{ margin: 0 35px 50px 50px; padding-bottom: 20px; font-size: 17px; border-bottom: 2px solid #E0CBEC; box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075); }
+.post{ margin: 0 35px 50px 50px; padding-bottom: 20px; font-size: 17px; box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075); }
+.post:last-child {box-shadow: 0 5px 0 -5px rgba(0, 0, 0, 0.075); }
 .post .title{font-size: 28px; margin-bottom: 40px; color: #6BBA70; }
 .post .title a{color: #6BBA70;  text-decoration: none; border-bottom: none; margin: 0;}
 
@@ -45,6 +46,9 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .post .footer .author{opacity: 0.35;}
 .post .footer a{margin: 0; padding: 0; color: rgba(0, 0, 0, 0.95);}
 .post .footer a:hover{font-weight: bold;}
+
+#disqus_thread{margin: 40px 0 0;}
+#disqus_thread #footer {border-top: none !important;}
 
 blockquote{border-left: 0.5em solid #E0CBEC; padding-left: 20px;}
 

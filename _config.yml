@@ -10,6 +10,7 @@ markdown: rdiscount
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 小刀的草色天涯
+title: 小刀的草色天涯
+url: xiaodao.github.com
 author :
   name : Jacky Li

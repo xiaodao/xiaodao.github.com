@@ -3,7 +3,7 @@ layout: post
 title: "Sublime初体验"
 description: ""
 category: "朝花夕拾"
-tags: ["sublime", "sublime2"]
+tags: ["sublime"]
 ---
 
 试了一下Sublime，着实超乎想象。决定彻底抛弃TextMate了。
@@ -12,7 +12,7 @@ tags: ["sublime", "sublime2"]
 
 *   当前行上下移动 control + command + 上下键 => Idea中的 shift + command + 上下键
 *   缩进/反缩进 command + [] （光标处在任何位置都可以）
-*   选中当前词 command +  => 和Idea的区别是，Sublime的 command + d 按的时候不会扩大选词的范围，而是选中整个编辑界面中所有重复的词，按一次多选一个，这个可以用来批量编辑。
+*   选中当前词 command + d => 和Idea的区别是，Sublime的 command + d 按的时候不会扩大选词的范围，而是选中整个编辑界面中所有重复的词，按一次多选一个，这个可以用来批量编辑。
 *   复制当前行 shift + command + d （没有换行的话就是复制整个段落）
 *   删除当前行 control + shift + k 
 *   从光标当前位置删除到结尾 control + k

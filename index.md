@@ -15,7 +15,8 @@ title: 小刀的草色天涯
 					{% endfor %}
 				</div>
 				<span class="date">{{ post.date | date_to_string }}</span><span class="author"> posted by {{ site.author.name }} in</span>
-				<span><a href="">{{ post.category }}</a></span>
+				<span><a class="category" href="">{{ post.category }}</a></span>
+				<span><a class="comments" href="{{ post.url }}#disqus_thread"></a></span>
 			</div>
 		</div>
 	{% endfor %}

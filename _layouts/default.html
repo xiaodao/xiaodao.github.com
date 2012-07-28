@@ -53,7 +53,13 @@
           </div>
           <div class="sidebar-fragment">
             <div class="title">标签</div>
-            <div class="description">标签们</div>
+            <div class="description">
+              <div id='tag_cloud'>
+              {% for tag in site.tags %}
+                <a href="#{{ tag[0] }}" title="{{ tag[0] }}">{{ tag[0] }}</a>
+              {% endfor %}
+              </div>
+            </div>
           </div>
           <div class="sidebar-fragment">
             <div class="title">分类</div>
@@ -75,6 +81,6 @@
             s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
-        </script>
+    </script>
   </body>
 </html>

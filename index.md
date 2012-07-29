@@ -4,7 +4,7 @@ title: 小刀的草色天涯
 ---
 
 <div id="posts">
-	{% for post in site.posts %}
+	{% for post in site.posts limit: 3 %}
 		<div class="post">
 			<div class="title"><a href="{{ post.url }}">{{ post.title }}</a></div>
 			<div class="content">{{ post.content }}</div>
@@ -21,4 +21,3 @@ title: 小刀的草色天涯
 		</div>
 	{% endfor %}
 </div>
-

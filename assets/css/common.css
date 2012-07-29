@@ -26,6 +26,8 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 #sidebar .sidebar-fragment .description{margin: 10px 0 0;}
 #sidebar .sidebar-fragment .description ul li{margin: 5px 0 0;}
 #sidebar .sidebar-fragment a:hover{font-weight: bold;}
+#sidebar #recent-posts {margin-left: 20px;}
+#sidebar #recent-posts li{list-style: disc;}
 
 #content{ float: left; width: 840px; padding-top: 30px;}
 

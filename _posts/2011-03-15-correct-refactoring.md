@@ -2,7 +2,7 @@
 layout: post
 title: 依赖快捷键做重构是不行的
 category: 敏捷开发
-tags: [agile, refactoring, ]
+tags: [refactoring]
 ---
 今天pair的时候，发现一个方法写的有问题，需要传一个参数进来。原来的方法是这样写的：
 <pre>public void methodA(){

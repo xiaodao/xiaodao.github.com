@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Disable IE8 Welcome Screen with powershell
-category: Uncategorized
-tags: [powershell, ]
+category: 敏捷开发
+tags: [powershell]
 ---
 回归测试每隔一段时间都会挂一次， 后来发现是好像IE8每隔一天左右就会弹出一次Welcome页面，从而导致无法定位页面元素而测试失败——我不得不说，微软这是做出了怎样脑残的设计？
 

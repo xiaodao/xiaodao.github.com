@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Test-Path的用法
-category: Uncategorized
-tags: [powershell, ]
+category: 敏捷开发
+tags: [powershell]
 ---
 Test-Path是powershell中一个很常用的命令。可以用来检测：
 

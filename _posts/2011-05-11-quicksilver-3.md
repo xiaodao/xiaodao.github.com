@@ -2,7 +2,7 @@
 layout: post
 title: Quicksilver进阶应用指南（3）──几款好用的插件
 category: 朝花夕拾
-tags: [productivity, quicksilver, ]
+tags: [productivity, quicksilver]
 ---
 1. Firefox Module/Safari Module
 

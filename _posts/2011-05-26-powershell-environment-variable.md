@@ -2,7 +2,7 @@
 layout: post
 title: 使用PowerShell管理环境变量
 category: 敏捷开发
-tags: [powershell, ]
+tags: [powershell]
 ---
 想用PowerShell对环境变量进行永久性的修改，只发现两种方式：
 

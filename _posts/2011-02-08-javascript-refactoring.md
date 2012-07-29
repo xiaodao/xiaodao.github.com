@@ -2,7 +2,7 @@
 layout: post
 title: 可测试性驱动的Javascript重构
 category: 敏捷开发
-tags: [重构, javascript, ]
+tags: [重构, javascript]
 ---
 <h4>引子</h4>
 

@@ -2,7 +2,7 @@
 layout: post
 title: JavaScript的prototype
 category: 敏捷开发
-tags: [javascript, ]
+tags: [javascript]
 ---
 在《JavaScript, The Good Parts》一书中，作者这样写到:
 <blockquote>Every object is linked to a prototype object from which it can inherit

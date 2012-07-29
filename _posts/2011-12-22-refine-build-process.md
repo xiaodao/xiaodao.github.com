@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 构建过程，从混乱到有序
-category: Uncategorized
-tags: []
+category: 敏捷开发
+tags: [Continous Integration]
 ---
 最近一段时间在帮一支团队做构建过程梳理，之前的状况是这样的：
 

@@ -2,7 +2,7 @@
 layout: post
 title: 要发布，请安全发布
 category: 敏捷开发
-tags: [devops, ]
+tags: [devops]
 ---
 上个月去海淀妇幼帮老婆挂号。
 

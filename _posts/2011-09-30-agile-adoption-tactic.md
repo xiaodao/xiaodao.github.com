@@ -2,7 +2,7 @@
 layout: post
 title: 眼见他起高楼，眼见他宴宾客
 category: 敏捷开发
-tags: [Agile adoption, ]
+tags: [Agile adoption]
 ---
 这是一个成立不到3年的团队。坐在办公室里，四周一片死寂。除了几个一线经理之外，我听不到有人来问、来讨论如何把事情做的更好。
 

@@ -38,8 +38,9 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .post .title a{color: #6BBA70;  text-decoration: none; border-bottom: none; margin: 0;}
 
 .post p{line-height: 1.65; margin: 0 0 25px;}
-.post ul{padding: 0 0 0px 30px;}
+.post ul{padding: 0 0 20px 30px;}
 .post ul li{padding: 0 0 5px 5px; list-style: disc;}
+.post ul li p{margin-bottom: 5px;}
 .post h2{margin-bottom: 30px; font-size: 25px; font-weight: bold;}
 
 .post .footer{font-size: 14px; }

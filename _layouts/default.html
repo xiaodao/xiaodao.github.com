@@ -32,6 +32,26 @@
             </div>
           </div>    
           <div class="sidebar-fragment">
+            <div class="title">标签</div>
+            <div class="description">
+              <div id='tag_cloud'>
+              {% for tag in site.tags %}
+                <a href="#{{ tag[0] }}" title="{{ tag[0] }}">{{ tag[0] }}</a>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="sidebar-fragment">
+            <div class="title">分类</div>
+            <div class="description">
+                <ul>
+                  {% for category in site.categories %}
+                      <li> <a href="/categories/{{category | first}}">{{category | first}}({{category | last | size }})</a></li>
+                  {% endfor %}
+                </ul>
+            </div>
+          </div>
+           <div class="sidebar-fragment">
             <div class="title">我的开源项目</div>
             <div class="description">
               <ul>
@@ -60,20 +80,6 @@
               <p>新浪微博: @凉粉小刀</p>
               <p>Email: veryfaint[at]gmail.com</p>
             </div>
-          </div>
-          <div class="sidebar-fragment">
-            <div class="title">标签</div>
-            <div class="description">
-              <div id='tag_cloud'>
-              {% for tag in site.tags %}
-                <a href="#{{ tag[0] }}" title="{{ tag[0] }}">{{ tag[0] }}</a>
-              {% endfor %}
-              </div>
-            </div>
-          </div>
-          <div class="sidebar-fragment">
-            <div class="title">分类</div>
-            <div class="description">分类们</div>
           </div>
         </div>
       	<footer>

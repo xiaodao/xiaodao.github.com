@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 最近要读的几本书
-category: 宝宝成长日记
-tags: [李欣娜, ]
+category: 宝宝成长
+tags: [李欣娜]
 ---
 1. 40周孕期全程手册
 

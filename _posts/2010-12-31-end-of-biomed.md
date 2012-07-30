@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 我们都在风雨之中慢慢成长，谁记得当初脸上青涩模样
+title: 我们都在风雨之中慢慢成长
 category: 心寄神往
 tags: []
 ---

@@ -22,7 +22,7 @@
     <div class="description">
       <div id='tag_cloud'>
       {% for tag in site.tags %}
-        <a href="/tags.html#{{ tag[0] }}" title="{{ tag[0] }}">{{ tag[0] }}</a>
+        <a href="/tags.html#{{tag[0]}}" title="{{tag[0]}}" rel="{{tag[1].size}}">{{ tag[0] }}</a>
       {% endfor %}
       </div>
     </div>
@@ -32,7 +32,7 @@
     <div class="description">
         <ul>
           {% for category in site.categories %}
-              <li> <a href="/categories.html#{{category | first}}">{{category | first}}({{category | last | size }})</a></li>
+              <li> <a href="/categories.html#{{category[0]}}">{{category | first}}({{category[1].size }})</a></li>
           {% endfor %}
         </ul>
     </div>

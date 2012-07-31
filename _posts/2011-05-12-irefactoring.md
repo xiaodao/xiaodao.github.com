@@ -2,7 +2,7 @@
 layout: post
 title: iRefactoring开发小记
 category: 敏捷开发
-tags: [可视化管理, irefactoring, opensource, refactoring]
+tags: [可视化管理, opensource, refactoring]
 ---
 <a href="https://github.com/xiaodao/iRefactoring">iRefactoring</a>前前后后花了大概一个多月的时间。下面总结一下这段时间里的心得：
 

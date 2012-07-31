@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 19天
-category: 宝宝成长日记
-tags: [李欣娜, ]
+category: 宝宝成长
+tags: [李欣娜]
 ---
 娜娜的眼睛一天比一天闪闪发亮。
 

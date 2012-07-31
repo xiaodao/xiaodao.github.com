@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 18天，开始尝试吃手指头
-category: 宝宝成长日记
-tags: [李欣娜, ]
+category: 宝宝成长
+tags: [李欣娜]
 ---
 可惜没有及时照下照片来……
 

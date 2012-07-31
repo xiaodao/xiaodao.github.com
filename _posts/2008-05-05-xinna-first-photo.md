@@ -1,8 +1,8 @@
 ---
 layout: post
 title: My daughters picture
-category: 宝宝成长日记
-tags: [李欣娜, ]
+category: 宝宝成长
+tags: [李欣娜]
 ---
 My daughter was born on April 30th, 21: 30, with a c-section.
 

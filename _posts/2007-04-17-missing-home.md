@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 思家
-category: 心寄神往
+category: 心情文字
 tags: []
 ---
 人言落日即天涯，望极天涯不见家。

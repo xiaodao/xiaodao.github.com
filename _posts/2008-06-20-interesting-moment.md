@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 小屁孩
-category: 宝宝成长日记
-tags: [李欣娜, ]
+category: 宝宝成长
+tags: [李欣娜]
 ---
 在妈妈不睡觉的时候睡觉；
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 我们都在风雨之中慢慢成长
-category: 心寄神往
+category: 心情文字
 tags: []
 ---
 记得去年5月11号，项目第一个迭代结束的时候，我在日记中写到：

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 你的每一次进步都让我们喜笑颜开
-category: 宝宝成长日记
-tags: [李欣娜, ]
+category: 宝宝成长
+tags: [李欣娜]
 ---
 12月2号，开口叫爸爸
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 吾女贪睡乎？痛觉神经迟钝乎？
-category: 宝宝成长日记
-tags: [李欣娜, ]
+category: 宝宝成长
+tags: [李欣娜]
 ---
 昨日归家，妻告吾女儿之奇事：
 

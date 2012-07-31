@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My daughters picture
+title: 欣娜的第一张照片
 category: 宝宝成长
 tags: [李欣娜]
 ---

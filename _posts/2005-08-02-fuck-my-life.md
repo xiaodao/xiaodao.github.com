@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 好糗啊
+title: 糗事一则
 category: 朝花夕拾
 tags: [糗事]
 ---

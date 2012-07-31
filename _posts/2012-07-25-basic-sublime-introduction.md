@@ -28,5 +28,6 @@ tags: ["sublime"]
 
 *  zencoding：用它来写html的体验是无与伦比的。参见[ZenCoding in Sublime Text 2](http://lucifr.com/139231/zencoding-in-sublime-text-2/)。
 *  markdown_preview: 参见[markdown预览插件](http://lucifr.com/2012/02/20/sublime-text-2-markdown-%E9%A2%84%E8%A7%88%E6%8F%92%E4%BB%B6/")。
+*  quick file namer: [文件快速重命名](https://github.com/wulftone/sublime-text-2-quick-file-renamer)，需配置快捷键: 打开Preferences -> Key Bindings - User -> 键入 {"keys": ["super+shift+r"], "command": "quick_file_move" }
 
 安装package control的使用说明请参见[一些必不可少的Sublime插件](http://www.qianduan.net/essential-to-sublime-the-text-2-plugins.html")。

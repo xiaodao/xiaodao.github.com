@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 丢失钱包，一千现金并所有银行卡，做童谣以纪念...
+title: 丢失钱包，做童谣以纪念
 category: 朝花夕拾
 tags: [冷笑话]
 ---

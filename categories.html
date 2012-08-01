@@ -3,11 +3,13 @@ layout: default
 ---
 <div id="categories">
 	{% for cat in site.categories %}
-		<h2 id="{{cat[0]}}">{{cat[0]}}</h2>
-		<ul class="sublist">
-			{% for f in cat[1] %}
-			<li><a href="{{f.url}}">{{ f.title }}</a></li>
-			{% endfor %}
-		</ul>
+		<div class="sublist">
+			<h2 id="{{cat[0]}}">{{cat[0]}}</h2>
+			<ul>
+				{% for f in cat[1] %}
+				<li><a href="{{f.url}}">{{ f.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
 	{% endfor %}
 </div>

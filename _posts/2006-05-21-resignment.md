@@ -2,7 +2,7 @@
 layout: post
 title: 破釜沉舟——失业男人的新生活
 category: 朝花夕拾
-tags: [work]
+tags: [工作]
 ---
 距离我下决心辞职已经有将近一个月的时间了 
 	

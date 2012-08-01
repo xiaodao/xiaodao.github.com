@@ -2,7 +2,7 @@
 layout: post
 title: 有关封装的一点事
 category: 敏捷开发
-tags: [重构, OO]
+tags: [重构]
 ---
 “Clean Code”第六章开头写到：
 

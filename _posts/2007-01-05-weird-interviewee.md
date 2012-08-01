@@ -2,7 +2,7 @@
 layout: post
 title: 偏执的interviewee
 category: 朝花夕拾
-tags: [work]
+tags: [工作]
 ---
 昨天公司来了一个人面试，乍一看简历我就大为头疼：精通Java，J2EE，.net，Delphi...Oracle，SqlServer....Dreamweaver，3DMAX，Flash.....似乎除了Perl,Python,Ruby,PHP之外，基本上就没有他不会的东西了。但是01年毕业，简历上却只写了半年的工作经验，还是做网站的前后台维护...
 	

@@ -3,11 +3,13 @@ layout: default
 ---
 <div id="tags">
 	{% for tag in site.tags %}
-		<h2 id="{{tag[0]}}">{{tag[0]}}</h2>
-		<ul class="sublist">
-			{% for f in tag[1] %}
-			<li><a href="{{f.url}}">{{ f.title }}</a></li>
-			{% endfor %}
-		</ul>
+		<div class="sublist">
+			<h2 id="{{tag[0]}}">{{tag[0]}}</h2>
+			<ul>
+				{% for f in tag[1] %}
+				<li><a href="{{f.url}}">{{ f.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
 	{% endfor %}
 </div>

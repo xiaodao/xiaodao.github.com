@@ -8,6 +8,7 @@ layout: default
 		{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 		  
 		{% if forloop.first %}
+			<div class="sublist">
 			<h2 id="{{this_year}}">{{this_year}}</h2>
 			<ul>
 		{% endif %}
@@ -20,6 +21,8 @@ layout: default
 
 		{% if this_year != next_year %}
 			</ul>
+			</div>
+			<div class="sublist">
 			<h2 id="{{next_year}}">{{next_year}}</h2>
 			<ul>
 		{% endif %}

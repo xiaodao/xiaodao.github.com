@@ -56,6 +56,10 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .post .footer a:hover{font-weight: bold;}
 .post .footer a.comments{float:right; color: black; border-bottom: 0; text-decoration: none; }
 .post strong {font-weight: bold}
-
-blockquote{border-left: 0.5em solid #E0CBEC; padding-left: 20px; margin-bottom: 20px;}
+.post blockquote{border-left: 0.5em solid #E0CBEC; padding-left: 20px; margin-bottom: 20px;}
 .post blockquote p {margin-bottom: 15px;}
+
+.sublist{float:left; width: 350px; border-top: 6px solid #CCCCCC; margin: 0 50px 50px 0; padding-top: 10px;}
+.sublist h2{font-style: bold; font-size: 25px; margin-bottom: 15px; }
+.sublist ul{margin-left: 40px;}
+.sublist ul li{list-style: disc; margin-bottom: 5px;}

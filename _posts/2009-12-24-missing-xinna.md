@@ -2,7 +2,7 @@
 layout: post
 title: 真想女儿
 category: 宝宝成长
-tags: [李欣娜, ]
+tags: [李欣娜]
 ---
 今天平安夜，跟老婆女儿skype。
 

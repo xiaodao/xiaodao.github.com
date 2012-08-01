@@ -2,7 +2,7 @@
 layout: post
 title: 躺在阿姨们送的毯子上，很开心
 category: 宝宝成长
-tags: [李欣娜, ]
+tags: [李欣娜]
 ---
 粉脸：
 

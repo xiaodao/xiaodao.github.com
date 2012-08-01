@@ -2,8 +2,9 @@
 layout: post
 title: 开源项目iRefactoring简介
 category: 敏捷开发
-tags: [可视化管理, irefactoring, opensource, refactoring]
+tags: [可视化管理, opensource, refactoring]
 ---
+
 每个项目都有可能出现遗留代码，或早或晚。每个类都有可能是个很大的坑，动一动就会不小心掉进去。于是人们常说：如果它还能工作，或者是不怎么需要改动，那就先不碰它。
 
 但墨菲定律总是会起作用的。那些避之唯恐不急的类，总是令人惊恐的出现在我们面前。这里要做hot fix，那里要加一个新功能──而且时间总是很短，短的来不及读懂这陀逻辑，来不及做上一点点重构。
@@ -21,10 +22,6 @@ tags: [可视化管理, irefactoring, opensource, refactoring]
 而如果把代码的提交次数和圈复杂度/测试覆盖率结合起来呢？当看到一个提交127次，圈复杂度高达200的类，你会做何感想？如果你是一名PM，看到大量的提交造就了一个难以救药的对象，你会不会找人采取措施？如果你是一个developer，你还会不会在碰到这个类的时候继续抱有可改可不改的态度？
 
 于是就有了<a href="https://github.com/xiaodao/iRefactoring">iRefactoring</a>这个工具，它可以根据代码的提交次数和圈复杂度/测试覆盖率生成报表。
-
-比如看到下面这张图，你就可以知道右上角的类是那种提交次数又多，圈复杂度又高的，是系统中的毒瘤：
-
-<img alt="" src="http://www.iamxiaodao.com/wp-content/uploads/2011/03/editor.png" title="code_analysis" class="alignnone" width="775" height="480">
 
 欢迎大家<a href="https://github.com/xiaodao/iRefactoring">试用</a>并给出反馈。
 

@@ -47,7 +47,7 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .post ul li p{margin-bottom: 5px;}
 .post h2{margin-bottom: 30px; font-size: 25px; font-weight: bold;}
 
-.post .footer{font-size: 14px; }
+.post .footer{font-size: 14px; margin-bottom: 20px;}
 .post .footer .date{font-weight: 300;}
 .post .footer .tags{margin: 10px 0 20px; opacity: 0.35;}
 .post .footer .author{opacity: 0.35;}

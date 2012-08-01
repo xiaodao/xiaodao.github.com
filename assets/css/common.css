@@ -1,6 +1,6 @@
 html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,span { margin:0;padding:0;}table {border-collapse:collapse;border-spacing:0;}fieldset{ border:0;}img,button {background:none;border:0 none;vertical-align:middle;}address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal;}ol,ul,li {list-style:none;}caption,th {text-align:left;}h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}q:before,q:after {content:'';}abbr,acronym { border:0;}
 
-body{ font: 300 15px/1.625 "Hiragino Sans GB W3","Helvetica Neue",Helvetica,Arial,sans-serif; background: url("../images/background.jpg") repeat scroll 0 0 #EDE5D5;}
+body{ font: 300 15px/1.625 "Hiragino Sans GB W3","Helvetica Neue",Helvetica,Arial,sans-serif; background: url("../images/bg.png") repeat scroll 0 0 #EDE5D5;}
 body{ height: auto; margin: 0 auto; padding: 0; width: 1155px; }
 
 footer{clear:both; padding: 20px 0 30px 0; font-size: 12px; border-top: 1px solid #CCC; width: 1005px; margin-left: 50px;}
@@ -9,7 +9,7 @@ footer .copyright{margin-right: 200px;}
 footer .disclaim{margin-right: 250px;}
 footer .feed{width: 150px;}
 
-a{ text-decoration: none;}
+a{ text-decoration: none; color: #6BBA70;}
 header {height: 50px; margin: 30px 0 0 50px;}
 header a{ border: 0 none; display: block; text-decoration: none; margin: 0; }
 
@@ -21,7 +21,7 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 
 #sidebar{ float: right; width: 315px;}
 #sidebar #aboutme {padding: 15px 30px 30px 15px; width: auto;}
-#sidebar #aboutme a{color: #6BBA70; text-decoration: none; border-bottom: none; margin: 0;}
+#sidebar #aboutme a{text-decoration: none; border-bottom: none; margin: 0;}
 #sidebar #aboutme p{margin:10px 0 0;}
 #sidebar #aboutme .title{ margin-bottom: 20px; font-size: 22px; line-height: 1.4; color: #453C2F; font-weight: bold;}
 #sidebar #aboutme img{margin:10px 0 20px 25px;}
@@ -37,8 +37,8 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 
 .post{ margin: 0 35px 50px 50px; padding-bottom: 20px; font-size: 17px; box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075); }
 .post:last-child {box-shadow: 0 5px 0 -5px rgba(0, 0, 0, 0.075); }
-.post a{border-bottom: 1px dotted #CCCCCC; color: #336699; margin: 0 4px; }
-.post .title{font-size: 28px; margin-bottom: 40px; color: #6BBA70; }
+.post a{border-bottom: 1px dotted #CCCCCC; margin: 0 4px; }
+.post .title{font-size: 35px; margin-bottom: 40px; color: #6BBA70; font-weight: bold;}
 .post .title a{color: #6BBA70;  text-decoration: none; border-bottom: none; margin: 0;}
 
 .post p{line-height: 1.65; margin: 0 0 25px;}

@@ -8,11 +8,11 @@ layout: default
 	<div class="footer"> 
 		<div class="tags">
 			{% for tag in page.tags %}
-				<span class="tag">#{{ tag }}</span>
+				<span class="tag"><a href="/tag.html#{{ tag }}">#{{ tag }}</a></span>
 			{% endfor %}
 		</div>
 		<span class="date">{{ page.date | date_to_string }}</span><span class="author"> posted by {{ site.author.name }} in</span>
-		<span><a href="">{{ page.category }}</a></span>
+		<span><a href="/category.html#{{ page.category }}">{{ page.category }}</a></span>
 	</div>
 	<div id="disqus_thread"></div>
 	<script type="text/javascript">

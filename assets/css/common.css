@@ -3,7 +3,7 @@ html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textar
 body{ font: 300 15px/1.625 "Hiragino Sans GB W3","Helvetica Neue",Helvetica,Arial,sans-serif; background: url("../images/bg.png") repeat scroll 0 0 #EDE5D5;}
 body{ height: auto; margin: 0 auto; padding: 0; width: 1155px; }
 
-footer{clear:both; padding: 20px 0 30px 0; font-size: 12px; border-top: 1px solid #CCC; width: 1005px; margin-left: 50px;}
+footer{clear:both; padding: 20px 0 30px 0; font-size: 12px; border-top: 1px solid #CCC; width: 1155px; margin: 20px 50px 0 0;}
 footer div{display: inline; }
 footer .copyright{margin-right: 200px;}
 footer .disclaim{margin-right: 250px;}
@@ -19,7 +19,7 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 
 .clearfix:after { clear: both; content: " "; display: block; height: 0; line-height: 0; visibility: hidden; }  
 
-#sidebar{ float: right; width: 315px;}
+#sidebar{ float: right; width: 315px; margin-bottom: 50px;}
 #sidebar #aboutme {padding: 15px 30px 30px 15px; width: auto;}
 #sidebar #aboutme a{text-decoration: none; border-bottom: none; margin: 0;}
 #sidebar #aboutme p{margin:10px 0 0;}
@@ -51,15 +51,11 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .post .footer .date{font-weight: 300;}
 .post .footer .tags{margin: 10px 0 20px; opacity: 0.35;}
 .post .footer .author{opacity: 0.35;}
-.post .footer a.category{margin: 0; padding: 0; color: rgba(0, 0, 0, 0.95);}
+.post .footer a{ border-bottom: 0;}
+.post .footer a.category, .post .footer a.tag {margin: 0; padding: 0; color: rgba(0, 0, 0, 0.95);}
 .post .footer a:hover{font-weight: bold;}
 .post .footer a.comments{float:right; color: black; border-bottom: 0; text-decoration: none; }
 .post strong {font-weight: bold}
 
-#disqus_thread{margin: 40px 0 0;}
-#disqus_thread #footer {border-top: none !important;}
-
 blockquote{border-left: 0.5em solid #E0CBEC; padding-left: 20px; margin-bottom: 20px;}
 .post blockquote p {margin-bottom: 15px;}
-
-footer p {color: #777777; font-family: "Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif; font-size: 1.1em; line-height: 1.5; margin: 20px 0; border-top: 1px solid #D9D9D9; padding-top:20px;}

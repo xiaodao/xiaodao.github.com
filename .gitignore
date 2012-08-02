@@ -1,6 +1,6 @@
 _site/*
 _theme_packages/*
-
+dashboard/result.xml
 Thumbs.db
 .DS_Store
 

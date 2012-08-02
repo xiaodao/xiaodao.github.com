@@ -15,8 +15,6 @@ class Main
 		open("result.xml", "w"){ |file|
 			file << "<channel>"
 			builds.each{ |build|
-				puts "*****************************************************************"
-				puts build.inner_html
 				file << "<item>" + build.inner_html.gsub("&lt;", "<").gsub("&gt;", ">").gsub("<link>", "").gsub("dc:date", "date").gsub("<br>", "").gsub(/&amp;/, "&") + "</item>"
 			}
 			file << "</channel>"

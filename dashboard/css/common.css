@@ -10,9 +10,9 @@ body { color: #444444; font-family: 'trebuchet MS','Lucida sans',Arial; font-siz
 table, tr, td{border-collapse: collapse; border-spacing: 0; }
 table td,table th{vertical-align: top; }
 table td{text-align:left;}
-table .date{width:15%;}
+table .date{width:10%;}
 table .committer{width:15%;}
-table .comments{width:15%;}
+table .comments{width:20%;}
 table .code{width:55%;}
 
 table { display:block;  margin: 0 10px; border: 1px solid #CCCCCC; border-radius: 6px 6px 6px 6px; box-shadow: 0 1px 1px #CCCCCC;}

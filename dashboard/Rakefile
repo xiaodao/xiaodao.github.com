@@ -5,4 +5,5 @@ task :default do
 	main.download_build_status
 	main.read_build_status
 	system 'git commit -a -m "update"'
+	system 'git push'
 end

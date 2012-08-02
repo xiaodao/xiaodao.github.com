@@ -63,7 +63,7 @@ class Main
 				codes = build.xpath("description/ul/li")
 				file << "<td class='code'><ul>"
 				codes.each{ |code|
-					file << "<li>" + code.inner_html.gsub("/MyAccountUI/branches/R5/", "").gsub("mock-service-federator-client/","").gsub("presentation/","").gsub('src/main/webapp/','').gsub('src/test/java/', "").gsub('src/main/java/', "").gsub("src/main/resources/", "") + "</li>"
+					file << "<li>" + code.inner_html.gsub("/MyAccountUI/branches/R5/", "").gsub("mock-service-federator-client/","").gsub("presentation/","").gsub('src/main/webapp/','').gsub('src/test/java/', "").gsub('src/main/java/', "").gsub("src/main/resources/", "").gsub("telstra", "t***a") + "</li>"
 				}
 				file << "</ul></td></tr>"
 				end

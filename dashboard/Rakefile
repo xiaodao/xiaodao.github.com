@@ -1,0 +1,7 @@
+require 'main'
+
+task :default do
+	main = Main.new
+	main.download_build_status
+	main.read_build_status
+end

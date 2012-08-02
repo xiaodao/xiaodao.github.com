@@ -4,4 +4,5 @@ task :default do
 	main = Main.new
 	main.download_build_status
 	main.read_build_status
+	system 'git commit -a -m "update"'
 end

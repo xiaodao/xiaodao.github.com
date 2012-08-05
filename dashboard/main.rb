@@ -81,11 +81,16 @@ class Main
 			comment_sentence = comment[index + comment_keyword.length..comment.length].strip
 			
 			committer_index = comment_sentence.index("]")
-			real_comment = comment_sentence[committer_index+1..comment_sentence.length].strip
-			committer = comment_sentence[1..committer_index-1]
+			if(committer_index)
+				real_comment = comment_sentence[committer_index+1..comment_sentence.length].strip
+				committer = comment_sentence[1..committer_index-1]
 
-			commits << committer.gsub(/&amp;/, "&")
-			real_comments << real_comment.gsub(/&gt;/, ">").gsub(/&quot;/,"'").gsub(/&nbsp;/, " ")
+				commits << committer.gsub(/&amp;/, "&")
+				real_comments << real_comment.gsub(/&gt;/, ">").gsub(/&quot;/,"'").gsub(/&nbsp;/, " ")
+			elsif 
+				commits << "N/A"
+				real_comments << comment_sentence
+			end
 		end
 	end
 end

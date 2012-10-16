@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 悠悠三年路（2）
-category: 朝花夕拾
+category: 心情文字
 tags: [记忆]
 ---
 

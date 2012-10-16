@@ -3,7 +3,7 @@ layout: post
 title: "育儿与系统思考"
 description: ""
 category: 朝花夕拾
-tags: ["李欣娜", "李欣谣"]
+tags: ["李欣娜", "李欣谣", "系统思考"]
 ---
 
 温伯格说：

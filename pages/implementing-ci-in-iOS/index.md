@@ -20,7 +20,7 @@ title: iOS持续集成解决方案
 * 单元测试
     * OCUnit
     * Kivi
-    * OCMockito
+    * OCMock
     * OCHamcrest
 * 功能测试
     * Frank

@@ -1,8 +1,18 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="author" content="{{ site.author.name }}">
+    <link href="/assets/css/common.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/pygments.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+	<div class="page">
+		<div class="title">{{ page.title }}</div>
+		<div class="content">{{ content }}</div>
+	</div>
+  </body>
+</html>
 
-<div class="post">
-	<div class="title">{{ page.title }}</div>
-	<div class="content">{{ content }}</div>
-</div>
+

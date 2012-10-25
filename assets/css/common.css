@@ -65,3 +65,21 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .sublist h2{font-style: bold; font-size: 25px; margin: 15px 0; }
 .sublist ul{margin-left: 40px;}
 .sublist ul li{list-style: disc; margin-bottom: 5px;}
+
+
+.page{margin: 0 35px 50px 50px; padding-bottom: 20px; font-size: 17px; box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075); }
+.page a{border-bottom: 1px dotted #CCCCCC; margin: 0 4px; }
+.page .title{font-size: 35px; margin: 80px 0 40px 0; color: #6BBA70; font-weight: bold;}
+.page .title a{color: #6BBA70; text-decoration: none; border-bottom: none; margin: 0;}
+
+.page p{line-height: 1.65; margin: 0 0 25px;}
+.page div>ul{padding: 0 0 20px 50px;}
+.page div>ul li{padding: 0 0 5px 5px; list-style: disc;}
+.page div>ul li p{margin-bottom: 5px;}
+.page li>ul{padding: 5px 0 0px 30px;}
+.page h2{margin-bottom: 30px; font-size: 25px; font-weight: bold;}
+.page h3{margin-bottom: 20px; font-size: 18px; font-weight: bold;}
+.page strong {font-weight: bold}
+.page blockquote{border-left: 0.5em solid #E0CBEC; padding-left: 20px; margin-bottom: 20px;}
+.page blockquote p {margin-bottom: 15px;}
+.page pre{margin-bottom: 20px;}

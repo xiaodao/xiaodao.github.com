@@ -63,11 +63,9 @@ title: CI-Bootcamp
 
 * 安装插件，为pipeline做准备，讲解每个插件的作用
 
-http://antagonisticpleiotropy.blogspot.com/2012/02/implementing-real-build-pipeline-with.html
-
 * 学员fork讲师的另一个代码库（分支），clone，针对某个功能添加功能测试，使之运行通过。
 
-* 学员在Jenkins上新建两个job，配置好pipeline，第一个运行mvn test，第二个执行部署脚本，部署后运行功能测试
+* 学员在Jenkins上新建两个job，配置好pipeline
 
 * 提交代码，观察两个job的运行情况
 
@@ -103,7 +101,7 @@ http://antagonisticpleiotropy.blogspot.com/2012/02/implementing-real-build-pipel
 
 ### 第二天下午（三个半小时）
 
-讲座（练习）Maven实战及工作原理、构建脚本的可维护性（一个半小时）
+讲座（练习）Maven(或Gradle)实战及工作原理、构建脚本的可维护性（一个半小时）
 
 讲座：持续交付简介（两个小时）
 
@@ -111,7 +109,7 @@ http://antagonisticpleiotropy.blogspot.com/2012/02/implementing-real-build-pipel
 
 讲座：构建——构建领域面对的问题，各构建工具如何解决问题，优缺点对比。
 
-讲座+练习 DVCS
+讲座+练习：DVCS
 
 讲座+练习：Database Migration
 

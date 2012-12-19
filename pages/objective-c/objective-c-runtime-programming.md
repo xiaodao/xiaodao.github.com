@@ -9,7 +9,7 @@ title: Objective-C 运行时编程
 
 我们先来看OCMock的一个最简单的用法：
 
-{% highlight %}
+{% highlight objc %}
 
 - (void)test_should_find_users_by_id {
     NSString *userId = @"userId";
@@ -41,9 +41,11 @@ title: Objective-C 运行时编程
 
 于是，我们首先要在OCMockRecorder中重写methodSignatureForSelector和forwardInvocation两个方法，并且还要想办法拿到findUserById:这个方法的MethodSignature。
 
-具体的实现方式是：第一步，让OCMock持有被mock的对象类型，重写OCMock的methodSignatureForSelector方法，让它直接去调用目标对象上的对应方法；第二步，把OCMock传给OCMockRecorder，让OCMockRecorder的methodSignatureForSelector方法调用OCMock的methodSignatureForSelector方法。实现代码如下：
+具体的实现方式是：第一步，让OCMock持有被mock的对象类型，重写OCMock的methodSignatureForSelector方法，让它直接去调用目标对象上的对应方法；第二步，把OCMock传给OCMockRecorder，让OCMockRecorder的methodSignatureForSelector方法调用OCMock的methodSignatureForSelector方法。
 
-{% highlight %}
+OCMock的实现代码如下：
+
+{% highlight objc %}
 
 - (id)initWithClass:(Class)aClass {
     self = [self init];
@@ -68,6 +70,16 @@ title: Objective-C 运行时编程
     return [mockedClass instanceMethodSignatureForSelector:aSelector];
 }
 
+{% endhighlight %}
+
+OCMockRecorder的实现代码如下：
+
+{% highlight objc %}
+
+- (id)andReturn: (id)anObject{
+    return self;
+}
+
 - (id)initWithSignatureResolver:(OCMock *)mock {
      self = [super init];
     if(self){
@@ -80,4 +92,31 @@ title: Objective-C 运行时编程
     return [signatureResolver methodSignatureForSelector:aSelector];
 }
 
+
+- (void)forwardInvocation:(NSInvocation *)anInvocation {
+    NSLog(@"forwarding...");
+}
+
 {% endhighlight %}
+
+写到这里，
+
+## 参考资料
+
+http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html
+
+http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/ObjectiveC/Chapters/ocSelectors.html
+
+https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSInvocation_Class/Reference/Reference.html
+
+https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/DistrObjects/Tasks/invocations.html
+
+https://developer.apple.com/library/mac/#documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/Reference/Reference.html
+
+https://developer.apple.com/library/mac/#documentation/General/Conceptual/DevPedia-CocoaCore/Selector.html
+
+http://stackoverflow.com/questions/313400/nsinvocation-for-dummies
+
+http://www.a-coding.com/2010/10/making-nsinvocations.html
+
+http://cocoasamurai.blogspot.com/2010/01/understanding-objective-c-runtime.html

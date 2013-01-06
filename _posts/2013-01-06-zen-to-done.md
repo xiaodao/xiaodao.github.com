@@ -2,8 +2,8 @@
 layout: post
 title: "zen to done"
 description: ""
-category: 
-tags: []
+category: 朝花夕拾
+tags: [阅读]
 ---
 
 [Zen To Done](http://book.douban.com/subject/3296364/)这本书写的很简洁，容易操作。把PDCA和学习、生活、工作有效地结合了起来，感觉比GTD容易上手。

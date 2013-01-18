@@ -81,7 +81,7 @@ OCMockRecorder的实现代码如下：
 }
 
 - (id)initWithSignatureResolver:(OCMock *)mock {
-     self = [super init];
+    self = [super init];
     if(self){
         signatureResolver = mock;
     }
@@ -99,7 +99,18 @@ OCMockRecorder的实现代码如下：
 
 {% endhighlight %}
 
-写到这里，
+写到这里，执行最开始那段测试代码就不会再抛出unrecognized selector sent to instance……这样的错误了，但测试依然无法通过，这是因为OCMock和OCMockRecorder都还没有真正去处理findUserById:这条消息。而这时候就轮到forwardInvocation:发挥作用了。
+
+回过头来再看测试代码中的这两行：
+{% highlight objc %}
+id userService = [OCMockObject mockForClass:[UserService class]];
+[[[userService stub] andReturn:user] findUserById:userId];
+{% endhighlight %}
+
+如果我们希望userService在接受到findUserById:这条消息的时候就返回user对象，那就需要让OCMockRecorder把findUserById:对应的Invocation记录下来，在OCMockRecorder内部再增加一种机制，让userService（即OCMockObject）可以在需要的时候得到user对象。
+
+
+
 
 ## 参考资料
 

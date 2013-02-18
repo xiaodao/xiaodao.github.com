@@ -79,6 +79,7 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .page li>ul{padding: 5px 0 0px 30px;}
 .page h2{margin-bottom: 30px; font-size: 25px; font-weight: bold;}
 .page h3{margin-bottom: 20px; font-size: 18px; font-weight: bold;}
+.page h3 a{margin: 0;}
 .page strong {font-weight: bold}
 .page blockquote{border-left: 0.5em solid #E0CBEC; padding-left: 20px; margin-bottom: 20px;}
 .page blockquote p {margin-bottom: 15px;}

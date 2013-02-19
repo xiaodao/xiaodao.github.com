@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jian Li - Senior developer and Agile Coach
+title: Jacky Li - Senior developer and Agile Coach
 ---
 
 ## Summary

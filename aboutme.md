@@ -47,7 +47,7 @@ A client/server based Java project, which used XMPP (Jabber), Eclipse RCP (SWT &
 
 The engagement was to provide agile/lean transformation for a delivery team with 120+ people, working on a huge legacy system with over 20,000,000 lines of code. In this consulting project, I helped the client to establish their continuous integration environment, and coached the client team with Scrum disciplines.
 
-### Alcatel-Lucent lean organizational transformation - 5 months
+### Alcatel-Lucent lean organizational transformation
 
 The engagement was to provide agile/lean transformation for a delivery team with 100+ people. I trained a lot of Scrum Masters and introduced Kanban method to the operation team, helped the team achieved higher productivity.
 

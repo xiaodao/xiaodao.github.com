@@ -3,6 +3,9 @@ layout: page
 title: Jacky Li - Senior developer and Agile Coach
 ---
 
+Email: veryfaint (@) gmail.com
+Phone: +86 13810459095 (I have an Australian permanent residency visa)
+
 ## Summary
 
 * strong technical passion and skill
@@ -23,7 +26,7 @@ title: Jacky Li - Senior developer and Agile Coach
 
 With Tesltra 24x7 app([iphone](https://itunes.apple.com/au/app/telstra-24x7-for-iphone/id543829966?mt=8),[ipad](https://itunes.apple.com/au/app/telstra-24x7/id515891733?mt=8)), people can take control and manage their Telstra Personal services on the move - track call & estimated data usage usage, pay the bills, check credit and recharge. 
 
-I've worked on this project for 5 months, did some exploration and practice on mobile app automated unit testing and acceptance testing with OCUnit/OCMock/OCHamcrest/Frank/Cucumber.
+I've worked on this project for 6 months, did some exploration and practice on mobile app automated unit testing and acceptance testing with OCUnit/OCMock/OCHamcrest/Frank/Cucumber.
 
 ## As a Java developer
 

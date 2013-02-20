@@ -4,6 +4,7 @@ title: Jacky Li - Senior developer and Agile Coach
 ---
 
 Email: veryfaint (@) gmail.com
+
 Phone: +86 13810459095 (I have an Australian permanent residency visa)
 
 ## Summary

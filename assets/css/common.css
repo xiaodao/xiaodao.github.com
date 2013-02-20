@@ -84,3 +84,5 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .page blockquote{border-left: 0.5em solid #E0CBEC; padding-left: 20px; margin-bottom: 20px;}
 .page blockquote p {margin-bottom: 15px;}
 .page pre{margin-bottom: 20px;}
+
+.page .aboutme{margin-left: 750px; }

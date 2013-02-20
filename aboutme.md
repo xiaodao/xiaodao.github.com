@@ -3,9 +3,12 @@ layout: page
 title: Jacky Li - Senior developer and Agile Coach
 ---
 
-Email: veryfaint (@) gmail.com
+<div class="aboutme">Email: veryfaint (@) gmail.com</div>
 
-Phone: +86 13810459095 (I have an Australian permanent residency visa)
+<div class="aboutme">Phone: +86 13810459095</div>
+
+<div class="aboutme">Visa: Permanent Residence</div>
+
 
 ## Summary
 

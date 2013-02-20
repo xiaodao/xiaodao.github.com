@@ -1,0 +1,1 @@
+Hi, Kayla, I heard that you're looking for iOS developers and I've been working on an iOS project ( Telstra 24x7 app) for around half a year.  I just got an Australian permanent residency visa and would like to find a job in Australia. May I speak with you? 

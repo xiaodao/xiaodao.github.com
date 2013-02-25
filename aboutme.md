@@ -34,7 +34,7 @@ I've worked on this project for 6 months, did some exploration and practice on m
 
 ## As a Java developer
 
-### [Telstra My Account](https://www.my.telstra.com.au/myaccount/home) - 7 months
+### [Telstra My Account](https://www.my.telstra.com.au/myaccount/home)
 
 The project is to build the online service portal for Telstra. The client team is trying agile methodology but has little experience of how to implement the technical practices. I coached the client team with agile practices, such as continuous integration, test driven development, pair programming, automatic test, etc.
 

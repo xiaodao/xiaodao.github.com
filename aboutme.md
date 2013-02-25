@@ -86,3 +86,9 @@ This goal of this project is to apply Powershell for environment configuration m
 * [Scaling Lean & Agile Development: Thinking and Organizational Tools for Large-Scale Scrum](http://www.amazon.com/Scaling-Lean-Agile-Development-Organizational/dp/0321480961)
 * [Programming Scala: Tackle Multi-Core Complexity on the Java Virtual Machine](http://www.amazon.com/Programming-Scala-Multi-Core-Complexity-Programmers/dp/193435631X)
 * [The ThoughtWorks Anthology](http://www.amazon.com/Thoughtworks-Anthology-Technology-Innovation-Programmers/dp/193435614X)
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('a').attr('target','_blank');
+	})
+</script>

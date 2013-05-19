@@ -15,7 +15,7 @@ tags: [攻略]
 
 ### 申请税号（TFN - Tax File Number）。
 
-安顿好之后当天就要在 https://iar.ato.gov.au/ 上申请就行，因为需要很多天才能办下来，官方说法是28天以内。所以当然越快办理越好。参考资料：[澳洲常用税务小知识](https://www.hioz.org/ibbs/thread-898869-1-2.html)
+安顿好之后当天就要在 https://iar.ato.gov.au/ 上申请，因为需要很多天才能办下来，官方说法是28天以内。所以当然越快办理越好。参考资料：[澳洲常用税务小知识](https://www.hioz.org/ibbs/thread-898869-1-2.html)
 
 ### 办理银行卡。
 

@@ -24,7 +24,7 @@ title: 小刀的草色天涯
 <script type="text/javascript">
 /* Iridize.com -- development environment scriptlet only*/
 (function(){var e="https:"==document.location.protocol?"https:":"http:";iridize={api:{q:[]},loadScripts:[],loadCss:[],jsPrefix:e+"//static-iridize.netdna-ssl.com/player/latest/static",prefix:e+"//iridize.com/player/latest"};var t=document.createElement("script");var n=document.getElementsByTagName("script")[0];t.src=e+"//static-iridize.netdna-ssl.com/player/latest/static/js/iridizeLoader.min.js";t.type="text/javascript";t.async=true;n.parentNode.insertBefore(t,n)})();window.iridizeCall=function(e,t,n){iridize.api.q.push({method:e,data:t,callback:n})};
-//FOR PER USER ACTIVATION RULES AND GOAL TRACKING - UNCOMMENT THE FOLLOWING LINE AND SET user_id
+iridizeCall("api.fields.set",{user_id:"hugo.jenkins"});
 iridizeCall("api.guide.list", {}, function(data) {
 
    var guidesList,guide,i;

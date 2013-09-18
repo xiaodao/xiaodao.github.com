@@ -21,21 +21,3 @@ title: 小刀的草色天涯
 		</div>
 	{% endfor %}
 </div>
-<script type="text/javascript">
-/* Iridize.com -- development environment scriptlet only*/
-(function(){var e="https:"==document.location.protocol?"https:":"http:";iridize={api:{q:[]},loadScripts:[],loadCss:[],jsPrefix:e+"//static-iridize.netdna-ssl.com/player/latest/static",prefix:e+"//iridize.com/player/latest"};var t=document.createElement("script");var n=document.getElementsByTagName("script")[0];t.src=e+"//static-iridize.netdna-ssl.com/player/latest/static/js/iridizeLoader.min.js";t.type="text/javascript";t.async=true;n.parentNode.insertBefore(t,n)})();window.iridizeCall=function(e,t,n){iridize.api.q.push({method:e,data:t,callback:n})};
-iridizeCall("api.fields.set",{user_id:"hugo.jenkins"});
-iridizeCall("api.guide.list", {}, function(data) {
-
-   var guidesList,guide,i;
-   // get the array of guide information objects
-   guidesList = data.guides;
-   // print the guides to browser console
-   for (i = 0; i < guidesList.length; i++) {
-       guide = guidesList[i];
-
-       console.log(guide.apiName + " | " + guide.displayName);
-
-   }
-});
-</script>

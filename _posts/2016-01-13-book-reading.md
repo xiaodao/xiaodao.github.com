@@ -2,7 +2,7 @@
 layout: post
 title: How to read a book 读书笔记
 category: 心情文字
-tags: 
+tags: 阅读
 ---
 
 《How to read a book》读书笔记

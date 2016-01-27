@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 书评: 《作家之旅》与《乌有乡》
+title: 书评 - 《作家之旅》与《乌有乡》
 category: 心情文字
 tags: 阅读
 ---

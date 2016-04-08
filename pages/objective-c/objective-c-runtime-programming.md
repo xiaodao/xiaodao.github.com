@@ -9,7 +9,7 @@ title: Objective-C 运行时编程
 
 我们先来看OCMock的一个最简单的用法：
 
-{% highlight objc %}
+```
 
 - (void)test_should_find_users_by_id {
     NSString *userId = @"userId";
@@ -22,7 +22,7 @@ title: Objective-C 运行时编程
     STAssertEqualObjects([actual name], [user name], @"", nil);
 }
 
-{% endhighlight %}
+```
 
 在上面的测试中，我们stub了UserService，让它在被调用findUserById:的时候返回user，然后把service作为构造函数的参数传给了UserController，然后调用UserController的finderUserById方法，拿到返回值进行assert。当service会进行http请求或者数据库操作时，我们往往会通过stub的方式来进行对象隔离，这是mock框架的典型应用场景。
 
@@ -45,7 +45,7 @@ title: Objective-C 运行时编程
 
 OCMock的实现代码如下：
 
-{% highlight objc %}
+```
 
 - (id)initWithClass:(Class)aClass {
     self = [self init];
@@ -70,11 +70,11 @@ OCMock的实现代码如下：
     return [mockedClass instanceMethodSignatureForSelector:aSelector];
 }
 
-{% endhighlight %}
+```
 
 OCMockRecorder的实现代码如下：
 
-{% highlight objc %}
+```
 
 - (id)andReturn: (id)anObject{
     return self;
@@ -97,15 +97,15 @@ OCMockRecorder的实现代码如下：
     NSLog(@"forwarding...");
 }
 
-{% endhighlight %}
+```
 
 写到这里，执行最开始那段测试代码就不会再抛出unrecognized selector sent to instance……这样的错误了，但测试依然无法通过，这是因为OCMock和OCMockRecorder都还没有真正去处理findUserById:这条消息。而这时候就轮到forwardInvocation:发挥作用了。
 
 回过头来再看测试代码中的这两行：
-{% highlight objc %}
+```
 id userService = [OCMockObject mockForClass:[UserService class]];
 [[[userService stub] andReturn:user] findUserById:userId];
-{% endhighlight %}
+```
 
 如果我们希望userService在接受到findUserById:这条消息的时候就返回user对象，那就需要让OCMockRecorder把findUserById:对应的Invocation记录下来，在OCMockRecorder内部再增加一种机制，让userService（即OCMockObject）可以在需要的时候得到user对象。
 

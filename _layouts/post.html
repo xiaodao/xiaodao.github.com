@@ -1,11 +1,21 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <meta name="author" content="{{ site.author.name }}">
+    <link href="/assets/css/common.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/pygments.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <script src="/assets/js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
 
 <div class="post">
 	<div class="title">{{ page.title }}</div>
 	<div class="content">{{ content }}</div>
-	<div class="footer"> 
+	<div class="footer">
 		<div class="tags">
 			{% for tag in page.tags %}
 				<span class="tag"><a class="tag" href="/tags.html#{{ tag }}">#{{ tag }}</a></span>
@@ -14,16 +24,7 @@ layout: default
 		<span class="date">{{ page.date | date_to_string }}</span><span class="author"> posted by {{ site.author.name }} in</span>
 		<span><a class="category" href="/categories.html#{{ page.category }}">{{ page.category }}</a></span>
 	</div>
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-	    var disqus_shortname = 'veryfaint'; 
-	    /* * * DON'T EDIT BELOW THIS LINE * * */
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
+<footer>
+	<div class=""><a href="http://xiaodao.github.io">返回首页</a></div>
+</footer>

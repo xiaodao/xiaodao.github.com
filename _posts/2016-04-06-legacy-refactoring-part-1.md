@@ -22,17 +22,17 @@ REA的iOS app就是这样的遗留系统。在多年以前，人们做了个决�
 
 初始化NSFetchedResultsController，然后发起请求
 
-<img src="/assets/images/method_1.png" alt="" width="640">
+<img src="/assets/images/method_1.png" alt="" class="large">
 
 ### 方式二 ###
 
 把自身当做CoreData的delegate，对数据库变化后作出响应
 
-<img src="/assets/images/method_2.png" alt="" width="640">
+<img src="/assets/images/method_2.png" alt="" class="large">
 
 粗略统计了一下，系统中一共有25个类与NSManageContext紧紧耦合。形成了下图中混乱的局面：
 
-<img src="/assets/images/legacy_structure.png" alt="" width="640">
+<img src="/assets/images/legacy_structure.png" alt="" class="large">
 
 整理出来这幅图以后，看着眼前密密麻麻的API调用，看着众多臃肿庞大的ViewController，我的大脑几乎失去了思考的能力，不知道如何下手。
 
@@ -72,7 +72,7 @@ REA的iOS app就是这样的遗留系统。在多年以前，人们做了个决�
 
 先看一段代码：
 
-<img src="/assets/images/storyboard_toggle.png" alt="" width="640">
+<img src="/assets/images/storyboard_toggle.png" alt="" class="large">
 
 假如要替换一个Storyboard的布局和相关ViewController的功能，耗时很久，如果直接在主干上修改，就会直接影响到现有的App，在功能完成之前都无法上线；如果拉一条分支出来做，未来就又会有大量的合并冲突。使用如上的特性开关就会避免上述问题。
 

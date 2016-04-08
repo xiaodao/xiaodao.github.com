@@ -17,7 +17,7 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 
 #container{ height: auto; margin: 30px 0 0; overflow: visible; padding: 0; width: 1155px; }
 
-.clearfix:after { clear: both; content: " "; display: block; line-height: 0; visibility: hidden; }  
+.clearfix:after { clear: both; content: " "; display: block; line-height: 0; visibility: hidden; }
 
 #sidebar{ float: right; width: 315px; margin-bottom: 50px;}
 #sidebar #aboutme {padding: 15px 30px 30px 15px; width: auto;}
@@ -35,7 +35,10 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 
 #content{ float: left; width: 840px; padding-top: 30px;}
 
-.post{ margin: 0 35px 50px 50px; padding-bottom: 20px; font-size: 17px; box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075); }
+#posts .post img.large{width:600px;}
+#posts .post {font-size:17px;}
+
+.post{ margin: 0 35px 50px 50px; padding-bottom: 20px; font-size: 25px; box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075); }
 .post:last-child {box-shadow: 0 5px 0 -5px rgba(0, 0, 0, 0.075); }
 .post a{border-bottom: 1px dotted #CCCCCC; margin: 0 4px; }
 .post .title{font-size: 35px; margin-bottom: 40px; color: #6BBA70; font-weight: bold;}
@@ -60,6 +63,7 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .post blockquote{border-left: 0.5em solid #E0CBEC; padding-left: 20px; margin-bottom: 20px;}
 .post blockquote p {margin-bottom: 15px;}
 .post pre{margin-bottom: 20px;}
+.post img.large{width:1024px;}
 
 .sublist{float: left; width: 350px; border-top: 6px solid #CCCCCC; margin: 0 40px 40px 0; padding-top: 10px;}
 .sublist h2{font-style: bold; font-size: 25px; margin: 15px 0; }

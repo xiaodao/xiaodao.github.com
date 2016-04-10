@@ -79,7 +79,7 @@ REA的iOS app就是这样的遗留系统。在多年以前，人们做了个决�
 
 当`shouldDisplayNewSearchResultsScreen`的值返回为真，就使用新的Storyboard，返回为假，就使用旧的Storyboard。这样一来，只要开关处于关闭状态，未完成的功能就是对用户不可见的，我们就既可以在开发环境下自测，也可以部署到测试环境下做验收测试，还可以针对开关为真的情况写对应的单元测试，让每次代码提交都有持续集成验证。这期间还可以继续发布新版本，用户完全感知不到影响，直到我们决定打开开关为止。
 
-特性开关的实现方式是多样的：
+特性开关可以有多种实现方式。
 
 #### 预编译参数 ####
 
@@ -101,11 +101,17 @@ GCC_PREPROCESSOR_DEFINITIONS = INTERNAL_TARGET=1
 //本特性只在Internal Target中可见
 + (BOOL)shouldDisplayNewSearchResultsScreen
 {
-  return !isInternalTarget;
+  return isInternalTarget;
 }
 ```
 
 我们系统中绝大部分的特性开关都是用这种方式实现的。
+
+#### NSUserDefaults ####
+
+<br/>有些功能可能对App有破坏性的影响，即便是设成只对Internal Target可见，也会影响到QA的回归测试。我们给Internal Target做了个Developer Settings界面，让开发人员可以自己修改开关状态，把开关的值存放在NSUserDefaults里面，默认返回false，只有在界面上手工切换之后才会返回true。测试和开发互相不受影响。
+
+向Realm迁移的特性开关使用的就是这种方式。
 
 #### 服务器取值 ####
 

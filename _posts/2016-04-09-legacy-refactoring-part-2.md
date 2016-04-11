@@ -13,7 +13,7 @@ tags: 工作
 
 第一种是直接初始化NSFetchedResultsController，发起请求，这种方式比较好处理，我们首先把跟数据请求有关的操作从ViewController中提取成一个方法，放到另一个对象中实现，以便日后替换。然后把所有的数据访问的方法都提取成一个协议，让数据层之上的对象都依赖于这个协议，而不是具体对象。如下所示
 
-```
+{% highlight objective-c %}
 @protocol REAPersistenceService <NSObject>
 - (NSArray *)getTodayUpcomingEvents;
 //其余方法略过
@@ -29,11 +29,11 @@ tags: 工作
   //封装了NSFetchedResultsController的初始化和performFetch操作
 }
 @end
-```
+{% endhighlight %}
 
 我们同时还需要使用特性开关，来决定给上层返回哪一个PersistenceService对象：
 
-```
+{% highlight objective-c %}
 @implemention REAPersistenceServiceFactory
 
 + (id<REAPersistenceService>)service {
@@ -43,11 +43,11 @@ tags: 工作
     return [REACoreDataPersistenceService sharedInstance];
   }
 }
-```
+{% endhighlight %}
 
 改造过后的ViewController就简单多了
 
-```
+{% highlight objective-c %}
 - (instancetype)init {
   self = [super init];
   if (self) {
@@ -59,34 +59,34 @@ tags: 工作
 - (NSArray *)getTodayUpcomingEvents {
   return [self.persistenceService getTodayUpcomingEvents];
 }
-```
+{% endhighlight %}
 
 第二种方式是ViewController把自己注册为NSFetchedResultsController的delegate，实现了相应接口，当数据发生变化时刷新UI。这个处理起来就比较棘手，因为我们希望提取之后的接口能够适配于Realm，这样才能无缝切换。然而Realm一方面目前没有像CoreData那样的细粒度通知，另一方面用的也不是delegate，而是提供了addNotificationBlock:方法，让调用者可以注册block。二者的接口并不兼容。
 
 这种情况下，我们的新协议就只能取二者交集：
 
-```
+{% highlight objective-c %}
 @protocol REAPersistenceDataDelegate<NSObject>
 - (void)contentDidChange:(id)content;
 @end
-```
+{% endhighlight %}
 
 这个协议跟CoreData和Realm的接口都不一致，两个PersistenceService都在内部做了适配和转发。比如在Realm的实现中，我们让它对外使用REAPersistenceDataDelegate协议来注册delegate，对内依然使用addNotificationBlock:方法监听，收到消息以后再调用delegate的contentDidChange方法。
 
 由于Realm没有细粒度通知，本来还想用
 
-```
+{% highlight objective-c %}
 - (void)objectDidChange:(id)object;
-```
+{% endhighlight %}
 这种方法来封装CoreData的
 
-```
+{% highlight objective-c %}
 - (void)controller:(NSFetchedResultsController *)controller
         didChangeObject:(id)anObject
         atIndexPath:(NSIndexPath *)indexPath
         forChangeType:(NSFetchedResultsChangeType)type
         newIndexPath:(NSIndexPath *)newIndexPath
-```
+{% endhighlight %}
 现在也只好作罢，让delegate收到数据后自己计算应当刷新哪部分的数据。
 
 ### 为数据对象提取协议 ###
@@ -103,12 +103,12 @@ tags: 工作
 
 上篇文章说到，我们在迁移过程中的特性开关是用NSUserDefaults实现的，在界面上手工切换开关状态。这样的好处是开发过程不会影响在Hockey和TestFlight上内部发布。直到实现完成后，我们再把开关改成
 
-```
+{% highlight objective-c %}
 + (BOOL)shouldUseRealm
 {
   return isInternalTarget;
 }
-```
+{% endhighlight %}
 
 让测试人员可以在真机上测试。回归测试结束之后，再让开关直接返回true，就可以向App Store提交了。
 

@@ -59,7 +59,7 @@ img.circle{border-radius: 100px 100px 100px 100px;}
 .post strong {font-weight: bold}
 .post blockquote{border-left: 0.5em solid #E0CBEC; padding-left: 20px; margin-bottom: 20px;}
 .post blockquote p {margin-bottom: 15px;}
-.post pre{margin-bottom: 20px; font-size: 15px; margin-left: 20px;}
+.post pre{margin-bottom: 20px; font-size: 15px;}
 .post img.large{width:600px;}
 
 .sublist{float: left; width: 350px; border-top: 6px solid #CCCCCC; margin: 0 40px 40px 0; padding-top: 10px;}

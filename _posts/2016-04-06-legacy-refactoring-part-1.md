@@ -91,7 +91,7 @@ GCC_PREPROCESSOR_DEFINITIONS = INTERNAL_TARGET=1
 
 而后就可以在Toggle代码中这样写
 
-```
+{% highlight objective-c %}
 #ifdef INTERNAL_TARGET
 #define isInternalTarget YES
 #else
@@ -103,7 +103,7 @@ GCC_PREPROCESSOR_DEFINITIONS = INTERNAL_TARGET=1
 {
   return isInternalTarget;
 }
-```
+{% endhighlight %}
 
 我们系统中绝大部分的特性开关都是用这种方式实现的。
 

@@ -11,7 +11,7 @@ tags: 工作
 
 前文说过，系统中ViewController使用NSManageContext的方式一共有两种。
 
-第一种是直接初始化NSFetchedResultsController，发起请求，这种方式比较好处理，我们首先做的事情，就是把跟数据请求有关的操作从ViewController中提取成一个方法，放到另一个对象中实现，以便日后替换。然后把所有的数据访问的方法都提取成一个协议，让数据层之上的对象都依赖于这个协议，而不是具体对象。如下所示
+第一种是直接初始化NSFetchedResultsController，发起请求，这种方式比较好处理，我们首先把跟数据请求有关的操作从ViewController中提取成一个方法，放到另一个对象中实现，以便日后替换。然后把所有的数据访问的方法都提取成一个协议，让数据层之上的对象都依赖于这个协议，而不是具体对象。如下所示
 
 ```
 @protocol REAPersistenceService <NSObject>
@@ -71,9 +71,7 @@ tags: 工作
 @end
 ```
 
-每个需要监听数据库变化的类都实现REAPersistenceDataDelegate这个协议，把自己注册为REAPersistenceService的delegate，而后我们在REACoreDataPersistenceService内部接受NSFetchedResultsController的回调，收到数据后再调用REAPersistenceDataDelegate的方法。相当于是做了一层转发。
-
-而在Realm的实现中，我们就额外提供了一个Adapter，让它对外使用REAPersistenceDataDelegate这个协议来注册delegate，对内依然使用addNotificationBlock:方法监听。
+这个协议跟CoreData和Realm的接口都不一致，两个PersistenceService都在内部做了适配和转发。比如在Realm的实现中，我们让它对外使用REAPersistenceDataDelegate协议来注册delegate，对内依然使用addNotificationBlock:方法监听，收到消息以后再调用delegate的contentDidChange方法。
 
 由于Realm没有细粒度通知，本来还想用
 
@@ -126,7 +124,7 @@ tags: 工作
 
 最后形成的架构如图所示
 
-
+<img src="/assets/images/clean_architecture.png" alt="" class="large">
 
 ## 总结 ##
 
@@ -140,6 +138,16 @@ tags: 工作
 
 ### 要有正确的方法 ###
 
-Martin Fowler在博客中总结过
+Martin Fowler在博客中总结过[重构的几种流程](http://martinfowler.com/articles/workflowsOfRefactoring)，在遗留代码中工作，Long-Term Refactoring是不可或缺的。
 
-### 不让今天的优秀设计成为明天的遗留代码 ###
+人们需要预见到在未来的产品规划中，哪些组件应当被替换，哪部分架构需要作出调整，把它们放到迭代计划里面来，当做日常工作的一部分。抽象分支和特性开关在Long-Term Refactoring可以发挥显著的效果，它们是持续交付的保障。
+
+技术债同样需要适当管理，按照严重程度和所需时间综合排序，一点点把债务偿还。或许有人觉得这是浪费时间，但跟一路披荆斩棘，穿越溪流，攀过险峰，历尽艰难险阻相比，我宁愿朝着另一个方向走上一段，因为那边有高速公路。
+
+遗留代码的出现，也意味着在过往的岁月中团队忽略了对代码质量的关注。为了不让代码继续腐化，[童子军规则](http://programmer.97things.oreilly.com/wiki/index.php/The_Boy_Scout_Rule)必须要养成习惯。
+
+### 设计会过时，但设计原则不会 ###
+
+很多技术决策都不是非黑即白的，它们更像是在种种约束下做出的权衡。比如在本文的例子中，当CoreData被Realm所替换以后，抽象层还要不要保留？ViewModel应该直接调用Repository，还是RepositoryProtocol？有人会觉得这一层抽象就好比只有单一实现的接口一样，没有存在的价值，有人会觉得几年后Realm也会过时被新的数据库取代，如果保留这层抽象，就会让那时候的迁移工作变得简单。但无论怎么做，过上一两年后，新加入团队的人都可能会觉得之前那些人做的很傻。
+
+我们无法预见未来，只能根据当前的情况做出简单而灵活的设计。这样的设计应当服从这些设计原则：单一职责、关注点分离、不要和陌生人说话……让我们的代码尽可能保持高内聚低耦合，保证良好的可测试性。时光会褪色，框架会过时，今天的优秀设计也会沦落成明天的遗留代码，但这些原则有着不动声色的力量。

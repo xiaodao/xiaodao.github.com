@@ -1,3 +1,10 @@
+---
+layout: post
+title: 运用系统思考，走上改善之路
+category: 朝花夕拾
+tags: 系统思考
+---
+
 (本文首发于[InfoQ中文站](http://www.infoq.com/cn/articles/lj-system-thinking-improvement-road))
 
 为什么敏捷实施，或是任何一点的过程改进都步履维艰？即使是十几人的团队中，也会出现“写自动化测试”──“不写自动化测试”──“写自动化测试”──“不写自动化测试”这种循环往复的过程？
